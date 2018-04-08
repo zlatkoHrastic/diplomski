@@ -69,6 +69,8 @@
     <Build Include="PripadnostKlubu.sql" />
     <Build Include="Regata.sql" />
     <Build Include="KategorijaUtrke.sql" />
+    <Build Include="Rezultat.sql" />
+    <Build Include="Posada.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
