@@ -58,4 +58,19 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Veslac.sql" />
+    <Build Include="Staza.sql" />
+    <Build Include="Camac.sql" />
+    <Build Include="StarosnaKategorija.sql" />
+    <Build Include="Masa.sql" />
+    <Build Include="Visina.sql" />
+    <Build Include="Klub.sql" />
+    <Build Include="PripadnostKlubu.sql" />
+    <Build Include="Regata.sql" />
+    <Build Include="KategorijaUtrke.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Diplomski rad baza.refactorlog" />
+  </ItemGroup>
 </Project>

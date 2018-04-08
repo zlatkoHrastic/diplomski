@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Klub]
+(
+	[IdKlub] INT NOT NULL PRIMARY KEY, 
+    [Ime] NVARCHAR(MAX) NOT NULL, 
+    [Kratica] NVARCHAR(10) NOT NULL
+)
