@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Veslac.sql" />
-    <Build Include="Staza.sql" />
+    <Build Include="Lokacija.sql" />
     <Build Include="Camac.sql" />
     <Build Include="StarosnaKategorija.sql" />
     <Build Include="Masa.sql" />
@@ -68,9 +68,14 @@
     <Build Include="Klub.sql" />
     <Build Include="PripadnostKlubu.sql" />
     <Build Include="Regata.sql" />
-    <Build Include="KategorijaUtrke.sql" />
-    <Build Include="Rezultat.sql" />
+    <Build Include="RangUtrke.sql" />
     <Build Include="Posada.sql" />
+    <Build Include="Utrka.sql" />
+    <Build Include="KontrolnaTocka.sql" />
+    <Build Include="ProlaznoVrijeme.sql" />
+    <Build Include="Kategorija.sql" />
+    <Build Include="PosadaVeslac.sql" />
+    <Build Include="PosadaUUtrci.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />

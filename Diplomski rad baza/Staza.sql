@@ -1,5 +1,0 @@
-﻿CREATE TABLE [dbo].[Staza]
-(
-	[IdStaza] INT NOT NULL PRIMARY KEY, 
-    [Naziv] NVARCHAR(MAX) NOT NULL
-)
