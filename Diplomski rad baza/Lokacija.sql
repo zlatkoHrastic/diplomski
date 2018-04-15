@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Lokacija]
 (
-	[IdStaza] INT NOT NULL PRIMARY KEY, 
+	[IdLokacija] INT NOT NULL PRIMARY KEY, 
     [Naziv] NVARCHAR(MAX) NOT NULL, 
     [Lokacija] [sys].[geography] NOT NULL
 )

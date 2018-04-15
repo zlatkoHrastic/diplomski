@@ -4,6 +4,6 @@
     [Ime] NVARCHAR(MAX) NOT NULL, 
     [DatumPocetak] DATE NOT NULL, 
     [DatumKraj] DATE NOT NULL, 
-    [IdStaza] INT NOT NULL, 
-    CONSTRAINT [FK_Regata_Staza] FOREIGN KEY (IdStaza) REFERENCES [Staza]([IdStaza])
+    [IdLokacija] INT NOT NULL, 
+    CONSTRAINT [FK_Regata_Staza] FOREIGN KEY (IdLokacija) REFERENCES [Lokacija]([IdLokacija])
 )
