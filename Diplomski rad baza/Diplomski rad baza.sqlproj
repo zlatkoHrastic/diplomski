@@ -75,7 +75,7 @@
     <Build Include="ProlaznoVrijeme.sql" />
     <Build Include="Kategorija.sql" />
     <Build Include="PosadaVeslac.sql" />
-    <Build Include="PosadaUUtrci.sql" />
+    <Build Include="Rezultat.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
