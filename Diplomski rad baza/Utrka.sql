@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Utrka]
 (
-	[IdUtrka] INT NOT NULL PRIMARY KEY, 
+	[IdUtrka] INT NOT NULL PRIMARY KEY IDENTITY, 
 	[IdKategorija] INT NOT NULL,
     [IdRangUtrke] INT NOT NULL,
 	[RedniBroj] SMALLINT NOT NULL, 

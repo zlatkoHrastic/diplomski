@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Klub]
 (
-	[IdKlub] INT NOT NULL PRIMARY KEY, 
+	[IdKlub] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Ime] NVARCHAR(MAX) NOT NULL, 
     [Kratica] NVARCHAR(10) NOT NULL
 )

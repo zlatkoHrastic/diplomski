@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Kategorija]
 (
-	[IdKategorija] INT NOT NULL PRIMARY KEY, 
+	[IdKategorija] INT NOT NULL PRIMARY KEY IDENTITY, 
     [IdRegata] INT NOT NULL, 
     [IdStarosnaKategorija] INT NOT NULL, 
     [IdCamac] INT NOT NULL, 

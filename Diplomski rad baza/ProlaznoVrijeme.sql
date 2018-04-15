@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ProlaznoVrijeme]
 (
-	[IdProlaznoVrijeme] INT NOT NULL PRIMARY KEY, 
+	[IdProlaznoVrijeme] INT NOT NULL PRIMARY KEY IDENTITY, 
     [IdKontrolnaTocka] INT NOT NULL, 
     [IdRezultat] INT NOT NULL, 
     [Vrijeme] TIME NULL,

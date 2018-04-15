@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Rezultat]
 (
-	[IdRezultat] INT NOT NULL PRIMARY KEY,
+	[IdRezultat] INT NOT NULL PRIMARY KEY IDENTITY,
 	[IdUtrka] INT NOT NULL, 
     [IdPosada] INT NOT NULL,
 	CONSTRAINT [FK_Rezultat_Utrka] FOREIGN KEY ([IdUtrka]) REFERENCES [Utrka]([IdUtrka]),

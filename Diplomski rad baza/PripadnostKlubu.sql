@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[PripadnostKlubu]
 (
-	[IdPripadnostKlubu] INT NOT NULL PRIMARY KEY, 
+	[IdPripadnostKlubu] INT NOT NULL PRIMARY KEY IDENTITY, 
     [IdVeslac] INT NOT NULL, 
     [IdKlub] INT NOT NULL, 
     [DatumPocetak] DATETIME NOT NULL, 

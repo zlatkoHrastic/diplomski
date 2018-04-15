@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Regata]
 (
-	[IdRegata] INT NOT NULL PRIMARY KEY, 
+	[IdRegata] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Ime] NVARCHAR(MAX) NOT NULL, 
     [DatumPocetak] DATE NOT NULL, 
     [DatumKraj] DATE NOT NULL, 

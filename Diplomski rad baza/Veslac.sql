@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Veslac]
 (
-	[IdVeslac] INT NOT NULL PRIMARY KEY, 
+	[IdVeslac] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Ime] NVARCHAR(50) NOT NULL, 
     [Prezime] NVARCHAR(50) NOT NULL, 
     [DatumRodenja] DATE NULL, 

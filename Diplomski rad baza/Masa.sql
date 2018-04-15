@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Masa]
 (
-	[IdMasa] INT NOT NULL PRIMARY KEY, 
+	[IdMasa] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Masa] DECIMAL(4) NOT NULL, 
     [VrijemeMjerenje] DATETIME NOT NULL, 
     [IdVeslac] INT NOT NULL, 
