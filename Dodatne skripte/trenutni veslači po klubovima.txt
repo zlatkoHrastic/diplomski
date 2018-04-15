@@ -1,0 +1,5 @@
+from Veslac
+join PripadnostKlubu on Veslac.IdVeslac=PripadnostKlubu.IdVeslac
+join klub on PripadnostKlubu.IdKlub=Klub.IdKlub
+where DatumPocetak<GETDATE() and (DatumKraj is null or DatumKraj>GETDATE())
+order by klub.ime, veslac.Prezime

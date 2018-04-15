@@ -1,0 +1,12 @@
+select RedniBroj,Kategorija.Kratica as Kategorija,RangUtrke.Kratica as Rang,Rezultat.Staza,Posada.kratica,Veslac.Ime,Veslac.Prezime,klub.Ime as ImeKluba
+from
+Utrka
+join Kategorija on Utrka.IdKategorija=Kategorija.IdKategorija
+join RangUtrke on Utrka.IdRangUtrke=RangUtrke.IdRangUtrke
+join Rezultat on Utrka.IdUtrka=Rezultat.IdUtrka
+join Posada on rezultat.IdPosada=Posada.IdPosada
+join PosadaVeslac on Posada.IdPosada=PosadaVeslac.IdPosada
+join Veslac on PosadaVeslac.IdVeslac=Veslac.IdVeslac
+join PripadnostKlubu on Veslac.IdVeslac=PripadnostKlubu.IdVeslac
+join Klub on PripadnostKlubu.IdKlub=klub.IdKlub
+order by RedniBroj, Staza

@@ -7,7 +7,8 @@
     [Kratica] NVARCHAR(10) NOT NULL,
 	CONSTRAINT [FK_Kategorija_Regata] FOREIGN KEY (IdRegata) REFERENCES [Regata](IdRegata),
 	CONSTRAINT [FK_Kategorija_StarosnaKategorija] FOREIGN KEY (IdStarosnaKategorija) REFERENCES [StarosnaKategorija](IdStarosnaKategorija),
-	CONSTRAINT [FK_Kategorija_Camac] FOREIGN KEY (IdCamac) REFERENCES [Camac](IdCamac)
+	CONSTRAINT [FK_Kategorija_Camac] FOREIGN KEY (IdCamac) REFERENCES [Camac](IdCamac),
+	CONSTRAINT [UQ_Re3gata_StarosnaKategorija_Camac] UNIQUE (IdRegata,IdStarosnaKategorija,IdCamac)
 
 
 )
