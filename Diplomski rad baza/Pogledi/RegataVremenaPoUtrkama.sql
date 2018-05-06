@@ -5,6 +5,6 @@ FROM Regata
 JOIN Kategorija on Kategorija.IdRegata=Regata.IdRegata
 JOIN Posada on Posada.IdKategorija=Kategorija.IdKategorija
 JOIN Utrka on Kategorija.IdKategorija=Utrka.IdKategorija 
-JOIN Rezultat on Rezultat.IdPosada=Posada.IdPosada
+JOIN Rezultat on Rezultat.IdPosada=Posada.IdPosada AND Rezultat.IdUtrka=Utrka.IdUtrka
 JOIN ProlaznoVrijeme on ProlaznoVrijeme.IdRezultat=Rezultat.IdRezultat
 JOIN KontrolnaTocka on KontrolnaTocka.IdKontrolnaTocka=ProlaznoVrijeme.IdKontrolnaTocka
