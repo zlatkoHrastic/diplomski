@@ -57,6 +57,7 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Pogledi" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Veslac.sql" />
@@ -76,6 +77,10 @@
     <Build Include="Kategorija.sql" />
     <Build Include="PosadaVeslac.sql" />
     <Build Include="Rezultat.sql" />
+    <Build Include="Pogledi\Zbirna startna lista.sql" />
+    <Build Include="Pogledi\RegataBrojVeslacaPoKlubovima.sql" />
+    <Build Include="Pogledi\RegataBrojPosadaPoKategorijama.sql" />
+    <Build Include="Pogledi\RegataVremenaPoUtrkama.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
