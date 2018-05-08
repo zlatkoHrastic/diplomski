@@ -3,7 +3,7 @@
 	[IdProlaznoVrijeme] INT NOT NULL PRIMARY KEY IDENTITY, 
     [IdKontrolnaTocka] INT NOT NULL, 
     [IdRezultat] INT NOT NULL, 
-    [Vrijeme] TIME NULL,
+    [Vrijeme] TIME(3) NULL,
 	CONSTRAINT [FK_Vrijeme_KontrolnaTocka] FOREIGN KEY (IdKontrolnaTocka) REFERENCES [KontrolnaTocka](IdKontrolnaTocka),
 	CONSTRAINT [FK_Vrijeme_Rezultat] FOREIGN KEY (IdRezultat) REFERENCES [Rezultat](IdRezultat),
 	CONSTRAINT [UQ_KontrolnaTocka_Rezultat] UNIQUE (IdKontrolnaTocka,IdRezultat)
