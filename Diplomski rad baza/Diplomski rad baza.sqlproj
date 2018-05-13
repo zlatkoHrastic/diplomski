@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Pogledi" />
+    <Folder Include="Okidaci" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Veslac.sql" />
@@ -81,6 +82,7 @@
     <Build Include="Pogledi\RegataBrojVeslacaPoKlubovima.sql" />
     <Build Include="Pogledi\RegataBrojPosadaPoKategorijama.sql" />
     <Build Include="Pogledi\RegataVremenaPoUtrkama.sql" />
+    <Build Include="Okidaci\PripadnostKlubuOgranicenje.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
