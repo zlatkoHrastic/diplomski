@@ -83,8 +83,13 @@
     <Build Include="Pogledi\RegataBrojPosadaPoKategorijama.sql" />
     <Build Include="Pogledi\RegataVremenaPoUtrkama.sql" />
     <Build Include="Okidaci\PripadnostKlubuOgranicenje.sql" />
+    <Build Include="Pogledi\VremenaPoVeslacu.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diplomski rad baza.publish.xml" />
+    <None Include="sqlexpress.publish.xml" />
   </ItemGroup>
 </Project>
