@@ -84,6 +84,9 @@
     <Build Include="Pogledi\RegataVremenaPoUtrkama.sql" />
     <Build Include="Okidaci\PripadnostKlubuOgranicenje.sql" />
     <Build Include="Pogledi\VremenaPoVeslacu.sql" />
+    <Build Include="Pogledi\VeslacPoKategoriji.sql" />
+    <Build Include="Pogledi\VeslaciUParu.sql" />
+    <Build Include="Pogledi\VeslanjeNaLokaciji.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
