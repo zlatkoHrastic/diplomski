@@ -91,6 +91,10 @@
     <Build Include="Pogledi\VeslaciPoStarosnimKategorijama.sql" />
     <Build Include="Funkcije\Fun_BrojVeslacaPoKlubovimaPoGodinama.sql" />
     <Build Include="Pogledi\BrojVeslacaPoKlubovimaPoGodinama.sql" />
+    <Build Include="Pogledi\RankPoPosadamaPoGodinama.sql" />
+    <Build Include="Funkcije\Fun_MedaljePoGodinama.sql" />
+    <Build Include="Pogledi\MedaljePoGodinama.sql" />
+    <Build Include="Funkcije\Sekvenca.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
@@ -98,5 +102,12 @@
   <ItemGroup>
     <None Include="Diplomski rad baza.publish.xml" />
     <None Include="sqlexpress.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
