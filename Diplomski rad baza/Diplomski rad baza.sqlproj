@@ -98,6 +98,12 @@
     <Build Include="Trening.sql" />
     <Build Include="TipTreninga.sql" />
     <Build Include="DionicaTreninga.sql" />
+    <Build Include="Pogledi\PredikcijskiTrening2000.sql" />
+    <Build Include="Funkcije\ToSeconds.sql" />
+    <Build Include="Funkcije\ToTime.sql" />
+    <Build Include="Pogledi\PredikcijskiTrening2000Predikcija.sql" />
+    <Build Include="Pogledi\PredikcijskiTrening500.sql" />
+    <Build Include="Pogledi\PredikcijskiTrening500Predikcija.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />
