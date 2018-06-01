@@ -1,5 +1,5 @@
 ﻿CREATE VIEW [dbo].[VeslaciUParu]
-	AS SELECT Veslac.IdVeslac, VeslaoSa.IdVeslac AS VeslaoSaId, VeslaoSa.ime+ ' '+ VeslaoSa.Prezime AS VeslaoSa,COUNT(*) AS VeslaliPuta
+	AS SELECT Veslac.IdVeslac, VeslaoSa.IdVeslac AS VeslaoSaId, VeslaoSa.Ime+ ' '+ VeslaoSa.Prezime AS VeslaoSa,COUNT(*) AS VeslaliPuta
 FROM Veslac 
 JOIN PosadaVeslac ON PosadaVeslac.IdVeslac=Veslac.IdVeslac
 JOIN PosadaVeslac AS IstaPosada ON IstaPosada.IdPosada=PosadaVeslac.IdPosada 

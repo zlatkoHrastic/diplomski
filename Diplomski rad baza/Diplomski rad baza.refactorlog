@@ -203,4 +203,25 @@
     <Property Name="ParentElementType" Value="SqlSchema" />
     <Property Name="NewName" Value="[Rezultat]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e2ace595-4c23-4612-8a49-1ee3ef46cd59" ChangeDateTime="06/01/2018 05:56:44">
+    <Property Name="ElementName" Value="[dbo].[Trening].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trening]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdTrening" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="87c1d89b-80c5-4507-b55a-2e2094d3a565" ChangeDateTime="06/01/2018 06:01:15">
+    <Property Name="ElementName" Value="[dbo].[TipTreninga].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TipTreninga]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdTipTreninga" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c3b734ae-afa9-4029-9d2b-587e1aa51e7c" ChangeDateTime="06/01/2018 06:03:13">
+    <Property Name="ElementName" Value="[dbo].[DionicaTreninga].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DionicaTreninga]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdDionicaTreninga" />
+  </Operation>
 </Operations>

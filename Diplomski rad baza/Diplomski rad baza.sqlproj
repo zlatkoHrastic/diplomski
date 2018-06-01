@@ -95,6 +95,9 @@
     <Build Include="Funkcije\Fun_MedaljePoGodinama.sql" />
     <Build Include="Pogledi\MedaljePoGodinama.sql" />
     <Build Include="Funkcije\Sekvenca.sql" />
+    <Build Include="Trening.sql" />
+    <Build Include="TipTreninga.sql" />
+    <Build Include="DionicaTreninga.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Diplomski rad baza.refactorlog" />

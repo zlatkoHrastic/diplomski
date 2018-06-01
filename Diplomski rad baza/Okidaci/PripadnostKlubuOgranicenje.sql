@@ -11,9 +11,9 @@
 		DECLARE @idVeslac AS int;
 
 		SELECT @newStart = DatumPocetak  FROM inserted;
-		SELECT @newEnd = DatumKRaj  FROM inserted;
+		SELECT @newEnd = DatumKraj  FROM inserted;
 		SELECT @id= IdPripadnostKlubu  FROM inserted;
-		SELECT @idVeslac = idVeslac from inserted;
+		SELECT @idVeslac = IdVeslac from inserted;
 		IF EXISTS(
 			SELECT * FROM PripadnostKlubu
 				WHERE  (@newStart<DatumKraj OR DatumKraj IS NULL) AND (@newEnd>DatumPocetak OR @newEnd is NULL) AND @idVeslac=IdVeslac AND @id!=IdPripadnostKlubu
