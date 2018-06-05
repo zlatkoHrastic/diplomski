@@ -1,0 +1,24 @@
+﻿
+<h2>Stvaranje regate</h2>
+<form class="form-horizontal" method="post">
+    <div class="form-group">
+        <label for="usr">Ime:</label>
+        <input type="text" class="form-control" id="usr" name="ImeRegate" required>
+    </div>
+    <div class="form-group">
+        <label>Vrijeme od:</label>
+        <input type="date" class="form-control" name="VrijemeOd"  value="2018-06-01T08:00" required>
+    </div>
+    <div class="form-group">
+        <label>Vrijeme do:</label>
+        <input type="date" class="form-control" name="VrijemeDo" value="2018-06-01T20:00" required>
+    </div>
+    <div class="form-group">
+        <label for="sel1">Lokacija:</label>
+        <select class="form-control"  name="IdLokacija">
+            <option value="1" selected>Jarun</option>
+            <option value="2">Bakar</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Diplomski rad baza", "Diplomski rad baza\Diplomski rad baza.sqlproj", "{A2B35C58-2A37-4088-9B12-CC49B7058770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrikupljanjePodataka", "PrikupljanjePodataka\PrikupljanjePodataka.csproj", "{8415B93D-F592-4792-97DF-9F04DE9DBA3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +19,15 @@ Global
 		{A2B35C58-2A37-4088-9B12-CC49B7058770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2B35C58-2A37-4088-9B12-CC49B7058770}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2B35C58-2A37-4088-9B12-CC49B7058770}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8415B93D-F592-4792-97DF-9F04DE9DBA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8415B93D-F592-4792-97DF-9F04DE9DBA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8415B93D-F592-4792-97DF-9F04DE9DBA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8415B93D-F592-4792-97DF-9F04DE9DBA3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF5B5D17-62F7-49E1-8B85-B6783B850D9D}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,48 @@
+﻿@model PrikupljanjePodataka.DTO.KateogrijaViewModel
+
+
+<h2>Stvaranje kategorija</h2>
+
+<form class="form-horizontal" method="post">
+    <div class="form-group">
+        <label>Regata:</label>
+        <select class="form-control" name="IdRegata">
+            @foreach (var regata in Model.Regate)
+            {
+                <option value="@regata.Id" selected>@regata.Value</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="usr">Kratica:</label>
+        <input type="text" class="form-control" name="Kratica" required>
+    </div>
+    <div class="form-group">
+        <label>Starosna kategorija:</label>
+        <select class="form-control" name="IdStarosnaKategorija">
+            @foreach (var kategorija in Model.StarosneKategorije)
+            {
+                <option value="@kategorija.Id" selected>@kategorija.Value</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Starosna kategorija:</label>
+        <select class="form-control" name="IdCamac">
+            @foreach (var camac in Model.Camci)
+            {
+                <option value="@camac.Id" selected>@camac.Value</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Broj kategorije:</label>
+        <input type="number" class="form-control" name="BrojKategorije" min="1" step="1" required>
+    </div>
+
+
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>
+
