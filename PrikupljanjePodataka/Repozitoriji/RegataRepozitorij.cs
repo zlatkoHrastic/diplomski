@@ -25,5 +25,13 @@ namespace PrikupljanjePodataka.Repozitoriji
                 return connection.Query<SelectDTO>(query).ToList();
             }
         }
+        public SelectDTO DohvatiRegatu(int idRegata)
+        {
+            string query = "SELECT [IdRegata] AS Id,[Ime] AS Value FROM [dbo].[Regata] WHERE IdRegata=@idRegata";
+            using (var connection = new SqlConnection(Repozitorij.Konekcija))
+            {
+                return connection.Query<SelectDTO>(query, new { idRegata }).FirstOrDefault();
+            }
+        }
     }
 }

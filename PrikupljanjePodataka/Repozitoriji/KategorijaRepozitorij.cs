@@ -36,5 +36,14 @@ namespace PrikupljanjePodataka.Repozitoriji
                 return brRedova > 0;
             }
         }
+
+        public List<SelectDTO> DohvatiKategorijePremaRegati(int idRegata)
+        {
+            string query = "SELECT [IdKategorija] AS Id,[Kratica] AS Value FROM [dbo].[Kategorija] WHERE IdRegata=@idRegata ";
+            using (var connection = new SqlConnection(Repozitorij.Konekcija))
+            {
+                return connection.Query<SelectDTO>(query, new { idRegata }).ToList();
+            }
+        }
     }
 }

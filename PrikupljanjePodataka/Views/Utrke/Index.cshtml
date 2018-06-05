@@ -1,0 +1,11 @@
+﻿@model IEnumerable<PrikupljanjePodataka.DTO.SelectDTO>
+
+<h2>Odaberite regatu</h2>
+
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        @Html.ActionLink(item.Value, "Regata", "Utrke", new { id = item.Id }, new { @class = "list-group-item list-group-item-action" })
+    }
+</div>
+

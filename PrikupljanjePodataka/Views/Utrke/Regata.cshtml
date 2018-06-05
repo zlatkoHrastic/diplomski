@@ -1,0 +1,44 @@
+﻿@model PrikupljanjePodataka.DTO.UtrkaViewModel
+<h2>Unesite podatke o utrci</h2>
+
+<form class="form-horizontal" method="post">
+
+    <div class="form-group">
+        <div class="form-group">
+            <label>Regata:</label>
+            <select class="form-control" name="IdRegata" disabled>
+                <option value="@Model.Regata.Id" selected>@Model.Regata.Value</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Kategorija:</label>
+            <select class="form-control" name="IdKategorija">
+                @foreach (var kategorija in Model.Kategorije)
+                {
+                    <option value="@kategorija.Id" selected>@kategorija.Value</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Rang utrke:</label>
+            <select class="form-control" name="IdRangUtrke">
+                <option value="1" selected>Finale A</option>
+                <option value="2" selected>Finale B</option>
+                <option value="3" selected>Kvalifikacije</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Redni broj utrke:</label>
+            <input type="number" class="form-control" name="RedniBroj" min="1" step="1" required>
+        </div>
+        <div class="form-group">
+            <label>Vrijeme utrke:</label>
+            <input type="datetime-local" class="form-control" name="StartnoVrijeme" value="2018-06-01T08:00" required>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>
+
