@@ -188,22 +188,35 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategorijeController.cs" />
+    <Compile Include="Controllers\KluboviController.cs" />
+    <Compile Include="Controllers\PosadeController.cs" />
     <Compile Include="Controllers\UtrkeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VeslaciController.cs" />
     <Compile Include="DTO\KategorijaDTO.cs" />
     <Compile Include="DTO\KateogrijaViewModel.cs" />
+    <Compile Include="DTO\KlubDTO.cs" />
+    <Compile Include="DTO\PosadaDTO.cs" />
+    <Compile Include="DTO\PosadaViewModel.cs" />
+    <Compile Include="DTO\PripadnostKlubuDTO.cs" />
+    <Compile Include="DTO\PripadnostKlubuViewModel.cs" />
     <Compile Include="DTO\RegataDTO.cs" />
     <Compile Include="DTO\SelectDTO.cs" />
     <Compile Include="DTO\UtrkaDTO.cs" />
     <Compile Include="DTO\UtrkaViewModel.cs" />
+    <Compile Include="DTO\VeslacDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="PoslovniSloj\Posada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repozitoriji\KategorijaRepozitorij.cs" />
+    <Compile Include="Repozitoriji\KlubRepozitorij.cs" />
+    <Compile Include="Repozitoriji\PosadaRepozitorij.cs" />
     <Compile Include="Repozitoriji\RegataRepozitorij.cs" />
     <Compile Include="Repozitoriji\Repozitorij.cs" />
     <Compile Include="Repozitoriji\UtrkaRepozitorij.cs" />
+    <Compile Include="Repozitoriji\VeslacRepozitorij.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -211,6 +224,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery-ui.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -243,6 +257,7 @@
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -261,11 +276,15 @@
     <Content Include="Views\Kategorije\Index.cshtml" />
     <Content Include="Views\Utrke\Index.cshtml" />
     <Content Include="Views\Utrke\Regata.cshtml" />
+    <Content Include="Views\Veslaci\Index.cshtml" />
+    <Content Include="Views\Klubovi\Index.cshtml" />
+    <Content Include="Views\Klubovi\Pripadnost.cshtml" />
+    <Content Include="Views\Posade\Index.cshtml" />
+    <Content Include="Views\Posade\Regata.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="PoslovniSloj\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

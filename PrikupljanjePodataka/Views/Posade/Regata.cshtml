@@ -1,0 +1,46 @@
+﻿@model PrikupljanjePodataka.DTO.PosadaViewModel
+<h2>Unesite podatke o posadi</h2>
+
+<form class="form-horizontal" method="post">
+
+    <div class="form-group">
+        <div class="form-group">
+            <label>Regata:</label>
+            <select class="form-control" name="IdRegata" disabled>
+                <option value="@Model.Regata.Id" selected>@Model.Regata.Value</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Kategorija:</label>
+            <select class="form-control" name="IdKategorija">
+                @foreach (var kategorija in Model.Kategorije)
+                {
+                    <option value="@kategorija.Id" selected>@kategorija.Value</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Kratica posade:</label>
+            <input type="text" class="form-control" name="KraticaPosade" required>
+        </div>
+        @for (var i = 0; i < 9; i++)
+        {
+            var mjesto = i + 1;
+            var veslacName = "Veslac" + i.ToString();
+            <div class="form-group">
+                <label>Id veslača broj @mjesto:</label>
+                <input list="veslaciDatalist" class="form-control" name="@veslacName" />
+                <datalist id="veslaciDatalist">
+                    @foreach (var veslac in Model.Veslaci)
+                    {
+                        <option value="@veslac.Id" selected>@veslac.Value</option>
+                    }
+                </datalist>
+            </div>
+        }
+
+    </div>
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>

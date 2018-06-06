@@ -6,6 +6,9 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="~/Content/jquery-ui.min.css">
+    <script src="~/Scripts/jquery-ui.min.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -23,6 +26,11 @@
                     <li>@Html.ActionLink("Regate", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Kategorije", "Index", "Kategorije", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Utrke", "Index", "Utrke", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Veslači", "Index", "Veslaci", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Klubovi", "Index", "Klubovi", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Pripadnost Klubu", "Pripadnost", "Klubovi", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Posade", "Index", "Posade", new { area = "" }, null)</li>
+
                 </ul>
             </div>
         </div>
