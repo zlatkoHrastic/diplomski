@@ -27,6 +27,26 @@ namespace PrikupljanjePodataka.Repozitoriji
                 return connection.Query<SelectDTO>(query).ToList();
             }
         }
-    }
 
+        public bool SpremiMasuVeslaca(MasaDTO masaVeslaca)
+        {
+            string query = "INSERT INTO [dbo].[Masa]([Masa],[VrijemeMjerenje] ,[IdVeslac]) VALUES(@Masa,@VrijemeMjerenje,@IdVeslac)";
+            using (var connection = new SqlConnection(Repozitorij.Konekcija))
+            {
+                var brRedova = connection.Execute(query, masaVeslaca);
+                return brRedova > 0;
+            }
+        }
+
+
+        public bool SpremiVisinuVeslaca(VisinaDTO visinaVeslaca)
+        {
+            string query = "INSERT INTO [dbo].[Visina]([Visina],[VrijemeMjerenje] ,[IdVeslac]) VALUES(@Visina,@VrijemeMjerenje,@IdVeslac)";
+            using (var connection = new SqlConnection(Repozitorij.Konekcija))
+            {
+                var brRedova = connection.Execute(query, visinaVeslaca);
+                return brRedova > 0;
+            }
+        }
+    }
 }

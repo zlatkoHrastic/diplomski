@@ -196,6 +196,7 @@
     <Compile Include="DTO\KategorijaDTO.cs" />
     <Compile Include="DTO\KateogrijaViewModel.cs" />
     <Compile Include="DTO\KlubDTO.cs" />
+    <Compile Include="DTO\MasaDTO.cs" />
     <Compile Include="DTO\PosadaDTO.cs" />
     <Compile Include="DTO\PosadaViewModel.cs" />
     <Compile Include="DTO\PripadnostKlubuDTO.cs" />
@@ -205,6 +206,7 @@
     <Compile Include="DTO\UtrkaDTO.cs" />
     <Compile Include="DTO\UtrkaViewModel.cs" />
     <Compile Include="DTO\VeslacDTO.cs" />
+    <Compile Include="DTO\VisinaDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -281,6 +283,8 @@
     <Content Include="Views\Klubovi\Pripadnost.cshtml" />
     <Content Include="Views\Posade\Index.cshtml" />
     <Content Include="Views\Posade\Regata.cshtml" />
+    <Content Include="Views\Veslaci\Masa.cshtml" />
+    <Content Include="Views\Veslaci\Visina.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

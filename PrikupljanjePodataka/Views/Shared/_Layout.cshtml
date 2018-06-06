@@ -26,7 +26,19 @@
                     <li>@Html.ActionLink("Regate", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Kategorije", "Index", "Kategorije", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Utrke", "Index", "Utrke", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Veslači", "Index", "Veslaci", new { area = "" }, null)</li>
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Veslači
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Registracija", "Index", "Veslaci", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Visina", "Visina", "Veslaci", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Težina", "Masa", "Veslaci", new { area = "" }, null)</li>
+                        </ul>
+                    </li>
+
                     <li>@Html.ActionLink("Klubovi", "Index", "Klubovi", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Pripadnost Klubu", "Pripadnost", "Klubovi", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Posade", "Index", "Posade", new { area = "" }, null)</li>
