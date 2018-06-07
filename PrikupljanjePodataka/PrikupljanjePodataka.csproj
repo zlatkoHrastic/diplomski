@@ -190,20 +190,27 @@
     <Compile Include="Controllers\KategorijeController.cs" />
     <Compile Include="Controllers\KluboviController.cs" />
     <Compile Include="Controllers\PosadeController.cs" />
+    <Compile Include="Controllers\RezultatiController.cs" />
     <Compile Include="Controllers\UtrkeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VeslaciController.cs" />
+    <Compile Include="DTO\PosadaUUtrkuViewModel.cs" />
+    <Compile Include="DTO\RezultatDTO.cs" />
+    <Compile Include="DTO\RezultatParcijalniDTO.cs" />
+    <Compile Include="DTO\UtrkaNaRegatiDTO.cs" />
     <Compile Include="DTO\KategorijaDTO.cs" />
     <Compile Include="DTO\KateogrijaViewModel.cs" />
     <Compile Include="DTO\KlubDTO.cs" />
     <Compile Include="DTO\MasaDTO.cs" />
     <Compile Include="DTO\PosadaDTO.cs" />
+    <Compile Include="DTO\PosadaUUtrciDTO.cs" />
     <Compile Include="DTO\PosadaViewModel.cs" />
     <Compile Include="DTO\PripadnostKlubuDTO.cs" />
     <Compile Include="DTO\PripadnostKlubuViewModel.cs" />
     <Compile Include="DTO\RegataDTO.cs" />
     <Compile Include="DTO\SelectDTO.cs" />
     <Compile Include="DTO\UtrkaDTO.cs" />
+    <Compile Include="DTO\UtrkaPosadeViewModel.cs" />
     <Compile Include="DTO\UtrkaViewModel.cs" />
     <Compile Include="DTO\VeslacDTO.cs" />
     <Compile Include="DTO\VisinaDTO.cs" />
@@ -211,12 +218,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="PoslovniSloj\Posada.cs" />
+    <Compile Include="PoslovniSloj\Utrka.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repozitoriji\KategorijaRepozitorij.cs" />
     <Compile Include="Repozitoriji\KlubRepozitorij.cs" />
     <Compile Include="Repozitoriji\PosadaRepozitorij.cs" />
     <Compile Include="Repozitoriji\RegataRepozitorij.cs" />
     <Compile Include="Repozitoriji\Repozitorij.cs" />
+    <Compile Include="Repozitoriji\RezultatRepozitorij.cs" />
     <Compile Include="Repozitoriji\UtrkaRepozitorij.cs" />
     <Compile Include="Repozitoriji\VeslacRepozitorij.cs" />
   </ItemGroup>
@@ -285,6 +294,13 @@
     <Content Include="Views\Posade\Regata.cshtml" />
     <Content Include="Views\Veslaci\Masa.cshtml" />
     <Content Include="Views\Veslaci\Visina.cshtml" />
+    <Content Include="Views\Utrke\UtrkaPosade.cshtml" />
+    <Content Include="Views\Utrke\Posada.cshtml" />
+    <Content Include="Views\Utrke\PosadaKategorija.cshtml" />
+    <Content Include="Views\Utrke\PosadaUtrka.cshtml" />
+    <Content Include="Views\Rezultati\Index.cshtml" />
+    <Content Include="Views\Rezultati\Regata.cshtml" />
+    <Content Include="Views\Rezultati\Spremi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -28,6 +28,7 @@ namespace PrikupljanjePodataka.Repozitoriji
             }
         }
 
+
         public bool SpremiMasuVeslaca(MasaDTO masaVeslaca)
         {
             string query = "INSERT INTO [dbo].[Masa]([Masa],[VrijemeMjerenje] ,[IdVeslac]) VALUES(@Masa,@VrijemeMjerenje,@IdVeslac)";

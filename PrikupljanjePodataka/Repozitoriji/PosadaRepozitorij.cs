@@ -26,5 +26,24 @@ namespace PrikupljanjePodataka.Repozitoriji
                 return brRedova > 0;
             }
         }
+
+        public List<SelectDTO> DohvatiPosadeIzKategorije(int idKategorija)
+        {
+            string query = "SELECT  [IdPosada] AS Id,[Kratica] AS Value FROM [dbo].[Posada] WHERE IdKategorija=@IdKategorija";
+            using (var connection = new SqlConnection(Repozitorij.Konekcija))
+            {
+                return connection.Query<SelectDTO>(query, new { idKategorija }).ToList();
+            }
+        }
+        //SELECT [Posada].[IdPosada],[Kratica] FROM [Posada] JOIN Rezultat ON Rezultat.IdPosada=Posada.IdPosada WHERE Rezultat.IdUtrka=1
+
+        public List<SelectDTO> DohvatiPosadeIzUtrke(int idUtrka)
+        {
+            string query = "SELECT [Rezultat].[IdRezultat] AS Id,[Kratica] AS Value FROM [Posada] JOIN Rezultat ON Rezultat.IdPosada=Posada.IdPosada WHERE Rezultat.IdUtrka=@idUtrka";
+            using (var connection = new SqlConnection(Repozitorij.Konekcija))
+            {
+                return connection.Query<SelectDTO>(query, new { idUtrka }).ToList();
+            }
+        }
     }
 }

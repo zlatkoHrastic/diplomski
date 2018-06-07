@@ -1,0 +1,38 @@
+﻿@model PrikupljanjePodataka.DTO.PosadaUUtrkuViewModel
+@{
+    ViewBag.Title = "Posada - Utrka";
+}
+
+<h2>Dodajte posadu u utrku</h2>
+
+
+<form class="form-horizontal" method="post">
+    <div class="form-group">
+        <label>Utrka:</label>
+        <select class="form-control" name="IdUtrka">
+            @foreach (var utrka in Model.Utrke)
+            {
+                <option value="@utrka.Id" selected>@utrka.Value</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Posada:</label>
+        <select class="form-control" name="IdPosada">
+            @foreach (var posada in Model.Posade)
+            {
+                <option value="@posada.Id" selected>@posada.Value</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Staza:</label>
+        <input type="number" class="form-control" name="BrojKategorije" min="1" step="1" required>
+    </div>
+
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>
+
+

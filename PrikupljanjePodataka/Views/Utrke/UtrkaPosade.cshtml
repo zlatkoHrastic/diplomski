@@ -1,0 +1,14 @@
+﻿@model IEnumerable<PrikupljanjePodataka.DTO.SelectDTO>
+@{
+    ViewBag.Title = "Utrka - posade";
+}
+
+<h2>Odaberite regatu</h2>
+
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        @Html.ActionLink(item.Value, "Posada", "Utrke", new { id = item.Id }, new { @class = "list-group-item list-group-item-action" })
+    }
+</div>
+

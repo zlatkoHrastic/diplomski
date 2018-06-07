@@ -24,24 +24,60 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Regate", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Kategorije", "Index", "Kategorije", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Utrke", "Index", "Utrke", new { area = "" }, null)</li>
-                    
+
+
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Kategorije
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Stvaranje kategorije", "Index", "Kategorije", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Registracija posade", "Index", "Posade", new { area = "" }, null)</li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Utrke
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Stvaranje utrke", "Index", "Utrke", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Dodavanje posade", "Posada", "Utrke", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Spremanje rezultata", "Index", "Rezultati", new { area = "" }, null)</li>
+                        </ul>
+                    </li>
+
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Veslači
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Registracija", "Index", "Veslaci", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Stvaranje veslača", "Index", "Veslaci", new { area = "" }, null)</li>
                             <li>@Html.ActionLink("Visina", "Visina", "Veslaci", new { area = "" }, null)</li>
                             <li>@Html.ActionLink("Težina", "Masa", "Veslaci", new { area = "" }, null)</li>
                         </ul>
                     </li>
 
-                    <li>@Html.ActionLink("Klubovi", "Index", "Klubovi", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Pripadnost Klubu", "Pripadnost", "Klubovi", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Posade", "Index", "Posade", new { area = "" }, null)</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Klubovi
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Registracija kluba", "Index", "Klubovi", new { area = "" }, null)</li>
+                            <li>@Html.ActionLink("Registracija veslača", "Pripadnost", "Klubovi", new { area = "" }, null)</li>
+
+                        </ul>
+                    </li>
+
+                    
+                    
+
 
                 </ul>
             </div>

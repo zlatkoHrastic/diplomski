@@ -1,0 +1,27 @@
+﻿@model IEnumerable<PrikupljanjePodataka.DTO.SelectDTO>
+@{
+    ViewBag.Title = "Vrijeme posade";
+}
+
+<h2>Pohranite vrijeme posade</h2>
+
+<form class="form-horizontal" method="post">
+    <div class="form-group">
+        <label>Posada:</label>
+        <select class="form-control" name="IdRezultat">
+            @foreach (var posada in Model)
+            {
+                <option value="@posada.Id" selected>@posada.Value</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Rezultat:</label>
+        <input type="number" class="form-control" name="Minute" step="1" placeholder="minute" required>
+        <input type="number" class="form-control" name="Sekunde" step="1" placeholder="sekunde" required>
+        <input type="number" class="form-control" name="Stotinke" step="1" placeholder="stotinke" required>
+    </div>
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>
+
