@@ -39,7 +39,7 @@ namespace PrikupljanjePodataka.Repozitoriji
 
         public List<SelectDTO> DohvatiKategorijePremaRegati(int idRegata)
         {
-            string query = "SELECT [IdKategorija] AS Id,[Kratica] AS Value FROM [dbo].[Kategorija] WHERE IdRegata=@idRegata ";
+            string query = "SELECT [IdKategorija] AS Id,[Kratica] AS Value FROM [dbo].[Kategorija] WHERE IdRegata=@idRegata ORDER BY BrojKategorije";
             using (var connection = new SqlConnection(Repozitorij.Konekcija))
             {
                 return connection.Query<SelectDTO>(query, new { idRegata }).ToList();

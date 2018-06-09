@@ -11,6 +11,11 @@ namespace PrikupljanjePodataka.Repozitoriji
     {
         public bool SpremiVeslaca(VeslacDTO veslac)
         {
+            if (veslac.Oib.Length >= 10)
+            {
+                veslac.Oib = veslac.Oib.Substring(0, 10);
+            }
+            
             string query = "INSERT INTO [dbo].[Veslac]([Ime],[Prezime],[DatumRodenja],[OIB])VALUES(@Ime,@Prezime,@DatumRodjenja,@Oib)";
             using (var connection = new SqlConnection(Repozitorij.Konekcija))
             {
