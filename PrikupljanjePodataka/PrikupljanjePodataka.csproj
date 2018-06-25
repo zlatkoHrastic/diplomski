@@ -191,12 +191,14 @@
     <Compile Include="Controllers\KluboviController.cs" />
     <Compile Include="Controllers\PosadeController.cs" />
     <Compile Include="Controllers\RezultatiController.cs" />
+    <Compile Include="Controllers\TreninziController.cs" />
     <Compile Include="Controllers\UtrkeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VeslaciController.cs" />
     <Compile Include="DTO\PosadaUUtrkuViewModel.cs" />
     <Compile Include="DTO\RezultatDTO.cs" />
     <Compile Include="DTO\RezultatParcijalniDTO.cs" />
+    <Compile Include="DTO\TreningDTO.cs" />
     <Compile Include="DTO\UtrkaNaRegatiDTO.cs" />
     <Compile Include="DTO\KategorijaDTO.cs" />
     <Compile Include="DTO\KateogrijaViewModel.cs" />
@@ -218,6 +220,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="PoslovniSloj\Posada.cs" />
+    <Compile Include="PoslovniSloj\Trening.cs" />
     <Compile Include="PoslovniSloj\Utrka.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repozitoriji\KategorijaRepozitorij.cs" />
@@ -226,6 +229,7 @@
     <Compile Include="Repozitoriji\RegataRepozitorij.cs" />
     <Compile Include="Repozitoriji\Repozitorij.cs" />
     <Compile Include="Repozitoriji\RezultatRepozitorij.cs" />
+    <Compile Include="Repozitoriji\TreningRepozitorij.cs" />
     <Compile Include="Repozitoriji\UtrkaRepozitorij.cs" />
     <Compile Include="Repozitoriji\VeslacRepozitorij.cs" />
   </ItemGroup>
@@ -299,6 +303,7 @@
     <Content Include="Views\Rezultati\Index.cshtml" />
     <Content Include="Views\Rezultati\Regata.cshtml" />
     <Content Include="Views\Rezultati\Spremi.cshtml" />
+    <Content Include="Views\Treninzi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

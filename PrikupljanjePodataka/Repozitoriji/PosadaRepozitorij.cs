@@ -13,7 +13,6 @@ namespace PrikupljanjePodataka.Repozitoriji
             using (var connection = new SqlConnection(Repozitorij.Konekcija))
             {
                 return connection.QuerySingle<int>(query, new { IdKategorija = posada.IdKategorija, Kratica = posada.KraticaPosade });
-                //return connection.Query<int>("SELECT SCOPE_IDENTITY()").FirstOrDefault();
             }
         }
 

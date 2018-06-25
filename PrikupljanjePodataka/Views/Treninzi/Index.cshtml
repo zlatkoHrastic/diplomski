@@ -1,0 +1,53 @@
+﻿@model IEnumerable<PrikupljanjePodataka.DTO.SelectDTO>
+
+@{
+    ViewBag.Title = "Trening";
+}
+
+<h2>Dodaj Trening</h2>
+
+<form class="form-horizontal" method="post">
+    <div class="form-group">
+        <label>Veslač:</label>
+        <input list="veslaciDatalist" class="form-control" name="IdVeslac" />
+        <datalist id="veslaciDatalist">
+            @foreach (var veslac in Model)
+            {
+                <option value="@veslac.Id" selected>@veslac.Value</option>
+            }
+        </datalist>
+    </div>
+    <div class="form-group">
+        <label for="sel1">TipTreninga:</label>
+        <select class="form-control" name="IdTipTreninga">
+            <option value="1" selected>Predikcijski trening na 2000 m</option>
+            <option value="2">Predikcijski trening na 500 m</option>
+            <option value="1002">Kondicijski trening na 8,6 i 4 km</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Vrijeme treninga:</label>
+        <input type="datetime-local" class="form-control" name="VrijemeTreninga" value="2018-06-01T08:00" required>
+    </div>
+    <div class="form-group">
+        <label>Dionica 1:</label>
+        <input type="number" class="form-control" name="Minute1" step="1" placeholder="minute" required>
+        <input type="number" class="form-control" name="Sekunde1" step="1" placeholder="sekunde" required>
+        <input type="number" class="form-control" name="Stotinke1" step="1" placeholder="stotinke" required>
+    </div>
+    <div class="form-group">
+        <label>Dionica 2:</label>
+        <input type="number" class="form-control" name="Minute2" step="1" placeholder="minute" required>
+        <input type="number" class="form-control" name="Sekunde2" step="1" placeholder="sekunde" required>
+        <input type="number" class="form-control" name="Stotinke2" step="1" placeholder="stotinke" required>
+    </div>
+    <div class="form-group">
+        <label>Dionica 3:</label>
+        <input type="number" class="form-control" name="Minute3" step="1" placeholder="minute" >
+        <input type="number" class="form-control" name="Sekunde3" step="1" placeholder="sekunde" >
+        <input type="number" class="form-control" name="Stotinke3" step="1" placeholder="stotinke" >
+    </div>
+    <button type="submit" class="btn btn-default">Spremi</button>
+</form>
+
+
