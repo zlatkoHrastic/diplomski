@@ -7,3 +7,11 @@
     CONSTRAINT [FK_Masa_Veslac] FOREIGN KEY (IdVeslac) REFERENCES [Veslac]([IdVeslac]),
 	CONSTRAINT [UQ_Masa_Vrijeme] UNIQUE (IdVeslac,VrijemeMjerenje)
 )
+
+GO
+
+CREATE INDEX [IX_Masa_IdMasa] ON [dbo].[Masa] ([IdMasa])
+
+GO
+
+CREATE INDEX [IX_Masa_IdVeslac] ON [dbo].[Masa] ([IdVeslac])

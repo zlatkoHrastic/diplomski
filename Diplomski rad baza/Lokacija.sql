@@ -6,3 +6,7 @@
     [GeografskaVisina] FLOAT NOT NULL
 
 )
+
+GO
+
+CREATE INDEX [IX_Lokacija_IdLokacija] ON [dbo].[Lokacija] ([IdLokacija])

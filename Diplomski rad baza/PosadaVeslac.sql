@@ -9,3 +9,11 @@
 	CONSTRAINT [UQ_IdPosada_MjestoUCamcu] UNIQUE (IdPosada,MjestoUCamcu)
 
 )
+
+GO
+
+CREATE INDEX [IX_PosadaVeslac_IdVeslac] ON [dbo].[PosadaVeslac] ([IdVeslac])
+
+GO
+
+CREATE INDEX [IX_PosadaVeslac_IdPosada_MjestoUCamcu] ON [dbo].[PosadaVeslac] ([IdPosada],[MjestoUCamcu])

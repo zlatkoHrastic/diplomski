@@ -8,3 +8,15 @@
 	CONSTRAINT [FK_Vrijeme_Rezultat] FOREIGN KEY (IdRezultat) REFERENCES [Rezultat](IdRezultat),
 	CONSTRAINT [UQ_KontrolnaTocka_Rezultat] UNIQUE (IdKontrolnaTocka,IdRezultat)
 )
+
+GO
+
+CREATE INDEX [IX_ProlaznoVrijeme_IdProlaznoVrijeme] ON [dbo].[ProlaznoVrijeme] ([IdProlaznoVrijeme])
+
+GO
+
+CREATE INDEX [IX_ProlaznoVrijeme_IdKontrolnaTocka] ON [dbo].[ProlaznoVrijeme] ([IdKontrolnaTocka])
+
+GO
+
+CREATE INDEX [IX_ProlaznoVrijeme_IdRezultat] ON [dbo].[ProlaznoVrijeme] ([IdRezultat])

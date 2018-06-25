@@ -7,3 +7,11 @@
     [IdLokacija] INT NOT NULL, 
     CONSTRAINT [FK_Regata_Lokacija] FOREIGN KEY (IdLokacija) REFERENCES [Lokacija]([IdLokacija])
 )
+
+GO
+
+CREATE INDEX [IX_Regata_IdRegata] ON [dbo].[Regata] ([IdRegata])
+
+GO
+
+CREATE INDEX [IX_Regata_IdLokacija] ON [dbo].[Regata] ([IdLokacija])

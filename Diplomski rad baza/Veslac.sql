@@ -6,3 +6,7 @@
     [DatumRodenja] DATE NULL, 
     [OIB] NCHAR(11) NULL
 )
+
+GO
+
+CREATE INDEX [IX_Veslac_IdVeslac] ON [dbo].[Veslac] ([IdVeslac])

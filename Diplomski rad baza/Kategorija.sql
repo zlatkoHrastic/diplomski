@@ -13,3 +13,19 @@
 
 
 )
+
+GO
+
+CREATE INDEX [IX_Kategorija_IdKategorija] ON [dbo].[Kategorija] ([IdKategorija])
+
+GO
+
+CREATE INDEX [IX_Kategorija_IdRegata] ON [dbo].[Kategorija] ([IdRegata])
+
+GO
+
+CREATE INDEX [IX_Kategorija_IdCamac] ON [dbo].[Kategorija] ([IdCamac])
+
+GO
+
+CREATE INDEX [IX_Kategorija_IdStarosnaKategorija] ON [dbo].[Kategorija] ([IdStarosnaKategorija])

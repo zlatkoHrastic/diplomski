@@ -6,3 +6,7 @@
     [StarostPocetak] TINYINT NULL, 
     [StarostKraj] TINYINT NULL
 )
+
+GO
+
+CREATE INDEX [IX_StarosnaKategorija_IdStarosnaKategorija] ON [dbo].[StarosnaKategorija] ([IdStarosnaKategorija])
