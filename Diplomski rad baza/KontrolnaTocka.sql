@@ -1,7 +1,8 @@
 ﻿CREATE TABLE [dbo].[KontrolnaTocka]
 (
-	[IdKontrolnaTocka] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Udaljenost] SMALLINT NOT NULL
+	[IdKontrolnaTocka] INT NOT NULL IDENTITY, 
+    [Udaljenost] SMALLINT NOT NULL,
+	CONSTRAINT [PK_KontrolnaTocka] PRIMARY KEY(IdKontrolnaTocka)
 )
 
 GO

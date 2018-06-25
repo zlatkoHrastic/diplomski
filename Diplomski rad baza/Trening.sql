@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[Trening]
 (
-	[IdTrening] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[IdTrening] INT NOT NULL IDENTITY, 
 	[IdVeslac] INT NOT NULL,
     [VrijemeTreninga] DATETIME2 NOT NULL, 
     [IdTipTreninga] INT NOT NULL ,
+	CONSTRAINT [PK_Trening] PRIMARY KEY(IdTrening),
 	CONSTRAINT [FK_Trening_Veslac] FOREIGN KEY ([IdVeslac]) REFERENCES [Veslac]([IdVeslac]),
 	CONSTRAINT [FK_Trening_TipTreninga] FOREIGN KEY ([IdTipTreninga]) REFERENCES [TipTreninga]([IdTipTreninga])
     

@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[RangUtrke]
 (
-	[IdRangUtrke] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[IdRangUtrke] INT NOT NULL IDENTITY, 
     [Kratica] NVARCHAR(10) NOT NULL, 
-    [Naziv] NVARCHAR(50) NOT NULL
+    [Naziv] NVARCHAR(50) NOT NULL,
+	CONSTRAINT [PK_RangUtrke] PRIMARY KEY(IdRangUtrke)
 )
 
 GO
